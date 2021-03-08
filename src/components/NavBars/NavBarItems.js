@@ -1,6 +1,10 @@
+import {NavLink} from 'react-router-dom';
+
 function NavBarItems({label,uri}) {
     return(
-        <li><a alt={label} href={uri}>{label}</a></li>
+        <li>
+           <NavLink className="hover:text-gray-200" to={uri}>{label}</NavLink>
+        </li>
     );
 
 }

@@ -4,7 +4,7 @@ import "./Brand.css"
 function BrandHeader({children}) {
     return(
         <header>
-            <Brand title="Mi App con"></Brand>
+            <Brand title="Gols List" ></Brand>
             <NavBar></NavBar>
         </header>
     );

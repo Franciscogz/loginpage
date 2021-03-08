@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "../Forms/Form";
 import FormFields from "../Forms/FormFields";
 import FormAction from "../Forms/FormAction";
+import User from "../../assets/img/user.png";
 function Login(){
     const [formData, setFormData]=useState({
         username:"",
@@ -18,17 +19,15 @@ function Login(){
 
     const myOnChange=function(e) {
         const{ name , value}= e.currentTarget;
-        //console.log(name, value);
         let error=null;
         if(name=="password"){
            error=(/^(?=.*\d)(?=.*A-Z)(?=.*a-z)(?=.*^\w\d\s:)(^\s){8,32}$/).test(value) ? null:"Contraseña Invalida";
-           // error=( /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,32}$/).test(value)? null:"Contrasena Invalido";
         }
          setFormData({formData,[name]:value, [name+"Error"]:error});
     }
-
     return(
-        <Form>
+        <Form >
+            <img src={User} className="w-24 h-24  md:h-32 md:w-32 lg:w-44 lg:h-44 md:w-"></img>
             <FormFields
                 type="text"
                 id="username"
@@ -47,7 +46,7 @@ function Login(){
             value={formData.password}
             error={formData.passwordError}
             placeholder="Contraseña"></FormFields>
-            <FormAction caption="Inciar Sesión" 
+            <FormAction caption="Inciar Sesión"
             onClick={
                 (e)=>{
                 e.preventDefault();
