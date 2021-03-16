@@ -17,8 +17,8 @@ function TodoListItem({descripcion, id, completed, doneHandler, deleteHandler}){
       <span className={myClass}  >{descripcion}</span>
     </section>
     <section className="flex 0  m-1  ">
-      <MdDone onClick={onClick} size={"3rem"} className="rounded border mx-1 bg-blue-500 hover:bg-blue-400"  ></MdDone>
-      <MdDelete onClick={onDeleteClick}size={"3rem"} className="rounded border bg-red-500 hover:bg-red-400"></MdDelete>
+      <MdDone onClick={onClick} size={"3rem"} className="rounded border mx-1 bg-blue-500 hover:bg-blue-400 hover:text-indigo-50"  ></MdDone>
+      <MdDelete onClick={onDeleteClick}size={"3rem"} className="rounded border bg-red-500 hover:bg-red-400 hover:text-indigo-50"></MdDelete>
     </section>
   </li>);
 }

@@ -10,8 +10,8 @@ function NewTodo({onChange,value,onAddNew} ) {
             name="txtNTodo"
             onChange={onChange}
             value={value}
-            caption="Nuevo Todo"
-            className=" flex-col m-2  p-2 w-full bg-white outline-black m-2"
+            caption="Nueva Lista"
+            className=" flex-col m-2  p-2 w-full bg-white outline-black font-mono text-3xl"
             labelClassName="flex"
             onKeyUp={(e)=> {if (e.keyCode == 13) {onAddNew(e);}}}
             

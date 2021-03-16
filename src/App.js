@@ -16,19 +16,17 @@ function App() {
         <BrandHeader></BrandHeader>
         <Switch>
           <Route path="/" exact>
-            <div className="h-full">
-              <Home></Home>
-            </div>  
+           <Home></Home>
           </Route>
           <Route path="/todos" exact>
-            <div className="h-full">
+            
             <Todo></Todo>
-            </div>
+
           </Route>
           <Route path="/login" exact>
-             <div className="h-full">
+
             <Login></Login>
-            </div>
+
           </Route> 
         </Switch>
       </section>

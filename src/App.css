@@ -36,21 +36,21 @@
   }
 }
 
-.fondo{
+body{
   background: url("assets/img/fondosm.jpg");
-  background-size: 100%;
+  background-size: cover;
 
 }
 
 @media screen and (min-width: 800px) {
-  .fondo {
+  body{
     background: url("assets/img/fondomd.jpg");
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 1100px) {
-  .fondo {
+  body {
     background: url("assets/img/fondolg.jpg");
     background-size: cover;
   }
